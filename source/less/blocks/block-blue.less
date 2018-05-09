@@ -40,3 +40,55 @@
   font-weight: @text-weight;
   line-height: 21px;
 }
+
+.block-blue__city-image {
+  width: 320px;
+  height: 260px;
+  background-image: url("../img/main-city-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.block-blue__bridge-image {
+  width: 320px;
+  height: 260px;
+  background-image: url("../img/main-bridge-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .block-blue__city-image {
+    width: 512px;
+    background-image: url("../img/main-city-mobile@1x.jpg"); //должно быть другое изображение. Это маленькое
+  }
+
+  .block-blue__bridge-image {
+    width: 512px;
+    background-image: url("../img/main-bridge-mobile@1x.jpg"); //должно быть другое изображение. Это маленькое
+    order: -1;
+  }
+
+  .block-1,
+  .block-2 {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .block-blue__city-image {
+    width: 800px;
+    background-image: url("../img/main-city-mobile@1x.jpg"); //должно быть другое изображение. Это маленькое
+  }
+
+  .block-blue__bridge-image {
+    width: 800px;
+    background-image: url("../img/main-bridge-mobile@1x.jpg"); //должно быть другое изображение. Это маленькое
+    order: -1;
+  }
+
+  .block-1,
+  .block-2 {
+    display: flex;
+    align-items: center;
+  }
+}
