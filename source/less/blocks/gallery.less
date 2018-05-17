@@ -1,153 +1,3 @@
-/*.photo {
-  .no-indents();
-}
-
-.item-wrapper {
-  margin: 0;
-  padding: 0 20px;
-}
-
-.photo__item {
-  .no-indents();
-  padding-top: 20px;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.photo__image {
-  margin: 0 auto;
-  margin-bottom: 17px;
-  width: 280px;
-  height: 280px;
-  display: block;
-}
-
-
-.photo__title {
-  margin: 0;
-  margin-left: 20px;
-  padding: 0;
-  padding-bottom: 4px;
-  text-transform: uppercase;
-  font-size: @text-size;
-  line-height: 24px;
-  font-weight: @title-weight;
-}
-
-.photo__author {
-  margin: 0;
-  margin-left: 20px;
-  padding: 0;
-  padding-bottom: 10px;
-  text-transform: none;
-  font-size: @text-size;
-  line-height: 24px;
-  font-weight: @text-weight;
-}
-
-.photo__rating {
-  margin: 0;
-  margin-left: 20px;
-  padding: 0;
-  padding-left: 35px;
-  padding-bottom: 18px;
-  font-size: @text-size;
-  line-height: 24px;
-  font-weight: @title-weight;
-  display: inline-block;
-}
-
-@media (min-width: @tablet-width) {
-  .item-wrapper {
-    margin: 0;
-    padding: 0 20px;
-  }
-
-  .photo__item {
-    .no-indents();
-  }
-
-  .photo__image {
-    margin: 0 auto;
-    width: 324px;
-    height: 267px;
-    display: block;
-  }
-
-  .image-1 {
-    background-image: url("/source/img/photo-sunset-mobile@1x.jpg") no-repeat;
-    width: 648px;
-    height: 400px;
-  }
-
-  .photo__caption {
-    .no-indents();
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #f2f2f2;
-    height: 80px;
-  }
-
-  .photo__description-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .photo__rating {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0;
-  }
-
-  .other-color {
-    background-color: #eaeaea;
-  }
-
-  .other-photo {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .photo {
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-basis: 33%;
-  }
-
-  .image {
-    width: 100%;
-  }
-
-  .image-1 {
-    width: 100%;
-    height: 400px;
-  }
-
-  .item-wrapper {
-    margin-top: -2px;
-    margin-right: -12px;
-  }
-
-  .photo__caption {
-    margin-top: -80px;
-    background-color: transparent;
-  }
-
-  .photo__title,
-  .photo__author,
-  .photo__rating {
-    color: @nav-color;
-  }
-}
-
-*/
-
 .gallery__list {
   .reset-list();
 }
@@ -155,6 +5,7 @@
 .gallery__item {
   padding: 21px 20px 0;
   border-top: 1px solid #e5e5e5;
+
   &:last-child {
     border-bottom: 1px solid #e5e5e5;
   }
@@ -190,7 +41,7 @@
 }
 
 .gallery__button-like {
-  background-image: url(../img/icon-like.svg);
+  background-image: url("../img/icon-like.svg");
   background-position: 0 2px;
   background-repeat: no-repeat;
   padding: 0;
@@ -200,7 +51,6 @@
 .button__likes-counter {
   padding-left: 35px;
 }
-
 
 @media (min-width: @tablet-width) {
   .gallery__list {
@@ -251,7 +101,7 @@
     position: absolute;
     top: 35%;
     right: 3%;
-    background-color: #f2f2f2;;
+    background-color: #f2f2f2;
   }
 
   .gallery__button-like--position {
@@ -311,13 +161,11 @@
   .gallery__author {
     color: #ffffff;
   }
-  .gallery__button-like  {
-    background-image: url(../img/icon-like-white.svg);
-    right: 30px;
-  }
 
   .gallery__button-like {
-    background-color: rgba(0, 0, 0, 0.0);
+    background-image: url("../img/icon-like-white.svg");
+    background-color: rgba(0, 0, 0, 0);
+    right: 30px;
   }
 
   .gallery__button-like--position {
