@@ -1,62 +1,98 @@
+.video {
+  position: relative;
+  margin-bottom: 105px;
+  background-color: #ffffff;
+}
+
+.video__title-wrapper {
+  padding: 35px 40px 36px;
+  text-transform: uppercase;
+}
+
 .video__title {
-  color: @title-color;
-  font-size: @title-size;
-  font-weight: @title-weight;
-  line-height: @text-height;
+  width: 245px;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 25px;
   text-align: center;
-  margin-top: 39px;
+  text-transform: uppercase;
 }
 
-.video__intro {
-  color: @text-color;
-  font-size: @text-size;
-  font-weight: @text-weight;
-  line-height: 24px;
+.video__description {
   text-align: center;
-  .no-indents();
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0;
+  color: #333333;
 }
 
-.video__image {
-  margin-top: 40px;
-  margin-bottom: 115px;
+.video__controls {
+  position: absolute;
+  bottom: -62px;
+  left: 20px;
+  width: 280px;
+  height: 115px;
 }
 
 @media (min-width: @tablet-width) {
+  .video {
+    padding: 0 60px;
+    margin-bottom: 31px;
+  }
+
   .video__title {
-    margin-top: 68px;
+    width: auto;
+    padding: 0;
+    font-size: 30px;
+    margin-bottom: 30px;
   }
 
-  .video__intro {
-    margin-left: 115px;
-    margin-right: 115px;
+  .video__title-wrapper {
+    padding: 66px 116px 76px;
   }
 
-  .video__image {
+  .video__poster {
+    background-image: url("../img/video-tablet.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 648px;
     height: 500px;
-    margin-top: 78px;
-    margin-bottom: 41px;
+  }
+
+  .video__controls {
+    width: 648px;
+    bottom: -16px;
+    left: 160px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 88px;
+  }
+
   .video__title {
-    margin-top: 72px;
+    margin-bottom: 30px;
   }
 
-  .video__intro {
-    margin-left: 386px;
-    margin-right: 386px;
+  .video__title-wrapper {
+    padding-top: 66px;
+    padding-right: 0;
+    padding-bottom: 72px;
+    padding-left: 0;
   }
 
-  .video__image {
+  .video__poster {
     width: 800px;
     height: 500px;
-    margin-left: 196px;
-    margin-right: 196px;
-    margin-top: 76px;
-    margin-bottom: 85px;
+  }
+
+  .video__description {
+    width: 420px;
   }
 }
